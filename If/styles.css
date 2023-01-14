@@ -1,0 +1,58 @@
+
+#animal-img {
+    border: 6px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+
+    position: relative;
+  }
+
+
+#animal-name {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 500px;
+    left: 1225px;
+  }
+
+
+
+  #animalButton {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 600px;
+    left: 1050px;
+  }
+
+
+  #refreshButton {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 600px;
+    left: 1350px;
+    
+  }
+
+  body {
+    background-color: forestgreen;
+  }
+  
+
+

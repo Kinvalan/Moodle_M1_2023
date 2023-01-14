@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body onload ="test(`onload`)">
+        <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
+
+        <input type="text" onchange="test(`onchange`)" oninput="test(`oninput`)">
+        <h3 onmouseover="test(`onmouseover`)" onmouseout="test(`onmouseout`)">Test test test></h3>
+
+        <h2 id="info"></h2>
+
+        <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
+
+ <script>
+
+    /*
+    Vi har en funksjon med et parameter for event navnene.
+    Da kan funksjonen ta i mot argumenter tilsvarende det parameteret. 
+    Så vi kjører de samme testene som når vi hadde funskjoner for hver test.
+    Det gjøres nå med 1 funksjon, som tar i mot argumenter. Her er de argumentene forskjellige eventhandlere.
+    */
+
+    function test(eventName) {
+        document.getElementById('info').innerHTML += `<li>${eventName}</li>`;
+    }
+
+ </script>
+        
+      
+    </body>
+</html>
