@@ -23,6 +23,11 @@ function updateView() {
     <button id="refreshButton" onclick="refreshPage()">Trykk her for å prøve igjen</button>
     <img id="animal-img" src="">
     <p id="animal-name"></p>
+
+    <audio id="dog-audio" src="SFX/sniffing-dog.mp3"></audio>
+    <audio id="cat-audio" src="SFX/Minecraft-cat.mp3"></audio>
+    <audio id="hamster-audio" src="SFX/hamster-dance.mp3"></audio>
+    <audio id="horse-audio" src="SFX/horse-race.mp3"></audio>
     `;
 
     document.getElementById('app').innerHTML = html;
@@ -59,28 +64,36 @@ function showRandomAnimal() {
     if (rng == 0) {
         document.getElementById('animal-img').src = "pictures/dog.png";
 
-        document.getElementById('animal-name').innerHTML = "Doggy";
+        document.getElementById('animal-name').innerHTML = "Du møtte på Doggy!";
+
+        document.getElementById("dog-audio").play();
     }
 
     // Cat
     else if (rng == 1) {
         document.getElementById('animal-img').src = "pictures/cat.png";
         
-        document.getElementById('animal-name').innerHTML = "Meowy";
+        document.getElementById('animal-name').innerHTML = " Du møtte på Meowy!";
+
+        document.getElementById("cat-audio").play();
     }
 
     // Hamster
     else if (rng == 2) {
         document.getElementById('animal-img').src = "pictures/hampter.png";
         
-        document.getElementById('animal-name').innerHTML = "Hampter";
+        document.getElementById('animal-name').innerHTML = "Du møtte på Hampter!";
+
+        document.getElementById("hamster-audio").play();
     }
 
     // Horse
     else {
         document.getElementById('animal-img').src = "pictures/horse.png";
         
-        document.getElementById('animal-name').innerHTML = "Horsey";
+        document.getElementById('animal-name').innerHTML = "Du møtte på Horsey!";
+
+        document.getElementById("horse-audio").play();
     }
 
     // updateView(); av en eller annen grunn funker det ikke med updateView her...
