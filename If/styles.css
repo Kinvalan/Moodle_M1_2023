@@ -13,13 +13,13 @@
 #animal-name {
     display: block;
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
     height: 100px;
     font-size: 30px;
     font-weight: bolder;
     position: absolute;
     top: 500px;
-    left: 1225px;
+    left: 1080px;
   }
 
 
@@ -33,7 +33,7 @@
     font-size: 20px;
     position: absolute;
     top: 600px;
-    left: 1050px;
+    left: 900px;
   }
 
 
@@ -46,7 +46,7 @@
     font-size: 20px;
     position: absolute;
     top: 600px;
-    left: 1350px;
+    left: 1340px;
     
   }
 
