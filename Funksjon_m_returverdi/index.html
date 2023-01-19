@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="mainDiv"></div>
+    <button onclick="createAndShowHtml('green', 'halla', 10, 2)">Test 1</button>
+    <button onclick="createAndShowHtml('orange', 'hei', 20, 4)">Test 2</button>
+    <button onclick="createAndShowHtml('blue', 'heisann', 30, 6)">Test 3</button>
+
+
+    <script>
+
+        /*
+        Se på videoen om funskjoner med returverdi på moodle.
+
+        Ta med et parameter til, f.eks: text-farge, border eller noe annet. 
+        Lag en funksjon til som returnerer den endringen, uten å endre det som står fra før, bare legge til.
+        */
+
+
+        function createAndShowHtml(color, text, fontSize, border) {
+            document.getElementById('mainDiv').innerHTML = /*HTML*/ `
+            <div ${createStyle(color, fontSize, border)}>${text}</div>
+            
+            `;
+        }
+
+        function createStyle(color, fontSize, border) {
+            return /*HTML*/ `style="${createBackgroundColor(color)} ; ${createFontSize(fontSize)} ; ${createBorder(border)} ;"`;
+        }
+
+
+        function createBackgroundColor(color) {
+            return /*HTML*/ `background-color: ${color}`;
+        }
+
+
+        function createFontSize(fontSize) {
+            return /*HTML*/ `font-Size: ${fontSize}px`;
+        }
+
+
+        function createBorder(border) {
+            return /*HTML*/ `border: ${border}px`;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
