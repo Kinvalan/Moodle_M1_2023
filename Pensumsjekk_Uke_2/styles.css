@@ -1,0 +1,29 @@
+.imageBox {
+    height: 300px;
+    width: 400px;
+    align-self: center;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    background-color: rgba(141, 129, 129, 0.774);
+    border: 2px solid black;
+}
+
+
+#infoText {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#imageName {
+    font-size: 30px;
+    position: relative;
+    left: 200px;
+}
+
+
+body {
+    background-color: aquamarine;
+}
