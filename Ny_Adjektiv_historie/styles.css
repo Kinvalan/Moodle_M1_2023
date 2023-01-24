@@ -1,0 +1,43 @@
+#storyText {
+    font-size: 40px;
+}
+
+
+.choiceDiv1 {
+    font-size: 40px;
+    border: solid black 2px;
+    margin-right: 1750px;
+    background-color:darkgoldenrod
+}
+
+.choiceDiv2 {
+    font-size: 40px;
+    border: solid black 2px;
+    margin-right: 1750px;
+    background-color:purple;
+}
+
+.choiceDiv3 {
+    font-size: 40px;
+    border: solid black 2px;
+    margin-right: 1750px;
+    background-color:greenyellow;
+}
+
+body {
+    background-color:lightskyblue
+}
+
+
+#h1-style {
+font-size: 65px;
+display: flex;
+justify-content: center;
+}
+
+
+#h2-style {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
