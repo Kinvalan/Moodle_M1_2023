@@ -19,7 +19,6 @@ let firstWord = "___";
 let secondWord = "___";
 let thirdWord = "___";
 let fourthWord = "___";
-//buildStory();
 
 // View
 
