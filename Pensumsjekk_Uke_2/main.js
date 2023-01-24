@@ -16,11 +16,7 @@ Bruk this, parameter og if/else
 
 // Model
 
-
-
-const image1 = document.getElementById('image1');
-const image2 = document.getElementById('image2');
-const image3 = document.getElementById('image3');
+// const - sånn at vi kan bruke constene istedenfor siden det er enklere.
 
 const image1Source = "img/kaktus.jpg";
 const image2Source = "img/lion.jpg";
@@ -29,6 +25,18 @@ const image3Source = "img/tekopp.jpg";
 
 // View
 
+/*
+Class 
+- sånn at vi kan style bildene
+
+onclick 
+- Vi har showRandomImage(this) funksjonen + image som parameter i funskjonen. 
+- Derfor skjønner programmet at det er når vi trykker på bilde-plassene at vi skal se et random bilde.
+ 
+- Vi har også showImageName(currentImage) inne i showRandomImage funksjonen.
+- Dette gjør at vi ser tilhørende bildenavn når vi klikker på et bilde.
+*/
+
 updateView()
 function updateView() {
     let html = /*HTML*/ `
@@ -36,9 +44,9 @@ function updateView() {
     
     <div id="imageName"></div>
 
-    <img id="image1" class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
-    <img id="image2" class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
-    <img id="image3" class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
+    <img class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
+    <img class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
+    <img class="imageBox" onclick="showRandomImage(this)" alt="Bilde av noe"></img>
     `;
 
     document.getElementById('app').innerHTML = html;
