@@ -67,7 +67,7 @@ Age: usersAge
         
         age = currentYear - birthYear;
 
-        result = `Navn: ${usersName} <br> Alder: ${age}`
+        result = `Hei ${usersName}! Hyggelig å møte deg. <br> Du er eller blir ${age} år gammel i år.`
 
         document.getElementById('result').innerHTML = result;
         
