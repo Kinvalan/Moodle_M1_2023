@@ -67,7 +67,6 @@ function updateView() {
 // Controller
 
 function addItem() {
-    input = document.getElementById('itemInput').value;
     shoppingCart.push(inputValue);
     updateView();
 }
